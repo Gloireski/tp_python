@@ -1,6 +1,7 @@
 # exam 5
 def divisible_by_5_and_7(low: int = 1500, high: int = 2700) -> list[int]:
     step = 35  # ppcm(5,7)
+    # arrondit low vers le haut au multiple de 35 le plus proche.
     start = ((low + step - 1) // step) * step
     return list(range(start, high + 1, step))
 
